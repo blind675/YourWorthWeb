@@ -1,46 +1,194 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Coming Soon to a Browser Near You</title>		
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		
-		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js'></script>
-		<script type='text/javascript' src='javascripts/jquery.tipsy.js'></script>
-		<script type='text/javascript'>
-		$(function() {
-			$('#tipsy').tipsy({fade: true, gravity: 's'});
-		});
-		</script>
-		<!--[if IE]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		
-	</head>
-	<body>
-		<div class="wrapper">
-			<div class="hr"></div>
-			<h1>Coming Soon to a Browser Near You</h1>
-			<p>Unfortunately, we’re not quite ready yet. <strong> But, you can see our progress below:</strong></p>
-						
-			<section class="progress">
-				<div class="progress-bar-container" id="tipsy" title="7% Complete"> <!-- Edit this title for the tooltip pop up -->
-					<article class="progress-bar" style="width:7%"  ></article> <!-- Edit the width percentage value to indicate progress -->
-				</div>
-				<article class="txt-launch-day-hat"></article>
-			</section>
-			
-			<div class="hr"></div>
-			<section class="mailing-list">
-				<h2>Want to be the first to know when we're ready?</h2>
-				<form>
-					<input type="text" value="your@email.com" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;">
-					<input type="submit" value="Subscribe">	
-				</form>
-			</section><div class="clear"></div>
-			<div class="hr"></div>
-			
-			<p class="credit">Template by <a href="http://www.medialoot.com">MediaLoot</a></p>
-		</div>
-	</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>You're Worth It!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+     <!-- Google Analytics -->
+     <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-43033298-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    <!-- End Google Analytics -->
+    
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar"
+                  data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">
+            <img alt="logo" src="image/bob_logo.png" height="35" width="105">
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="faq.html">FQA</a></li>
+			  <!-- Maibe Sorin helps here .. issue tracking 
+              <li><a href="bugs.html">Bugs</a></li> -->
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row-fluid heading">
+        <div class="span12">
+          <h1>You're Worth It</h1>
+        </div>
+      </div> 
+      <div class="row-fluid subheading">
+        <div class="span12">
+          <p class="lead">Because your time is money!</p>
+        </div>
+      </div>
+      <div class="row-fluid pitch">
+        <div class="span5 offset1 video">
+          <img class="img-polaroid" alt="@movie" src="movie.png">
+        </div>
+
+        <div class="span5 actions">
+          <div class="row-fluid">
+
+             <div class="row-fluid statistics">
+              <div class="span10 offset1">
+                <p class="donate">I believe, that software should be free, but you are more than welcome to show your 
+                  appreciation, in any way you see fit.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row-fluid">
+            <div class="span10 offset1">
+              <div class="span4">
+              <!-- AddThis Button BEGIN -->
+                <a class="coinbase-button" data-code="ee2e3ae7cbffaf50d8856df8f838b38c" data-button-style="custom_large"
+                 href="https://coinbase.com/checkouts/ee2e3ae7cbffaf50d8856df8f838b38c">Donate Bitcoins</a>
+                 <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+              <!-- AddThis Button END -->
+              </div>
+              <div class="span4 offset4" style="padding-top:3%;">
+              <!-- AddThis Button BEGIN -->  
+                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="CFH3XEQZVGSS4">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+              <!-- AddThis Button END -->
+              </div>
+          	</div>
+          </div>
+
+          <div class="row-fluid">
+            <div class="span8 offset2 social" style="margin-top:10px">
+              <!-- AddThis Button BEGIN -->
+             <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                  <a class="addthis_button_preferred_1"></a>
+                  <a class="addthis_button_preferred_2"></a>
+                  <a class="addthis_button_compact"></a>
+                  <a class="addthis_counter addthis_bubble_style"></a>
+              </div>
+              <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+              <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520106866efb2193"></script>
+              <!-- AddThis Button END -->
+            </div>
+          </div>
+
+        </div>
+        </div>
+      </div>
+    
+      <div class="row-fluid section1">
+        <div class="span5 offset1 asset">
+          <img class="img-polaroid" alt="shake" src="shake.png">
+        </div>
+        <div class="span5 copy">
+          <p>
+           You live in a culture where every minute counts. From the 
+		   day you are born to the day you die, you are told that 
+		   'time is money', but do you know just how much money? 
+		   Are you aware of just how much is your day worth? The 
+		   'You're Worth It' application aims to make you aware just 
+		   how expensive your time is. Born out of love of time, it's 
+		   an ever improving product that helps you realise your true 
+		   worth and never underestimate yourself again. All of this 
+		   was inspired by an incredible motivation lecture given by 
+		   Randy Pausch.
+         </p>
+        </div>
+      </div>
+
+      <div class="row-fluid section2">
+        <div class="span5 offset1 copy copy-right">
+          <p>
+            It is incredibly easy to use this application, just input 
+			your monthly earnings and expenses and let the system do 
+			the rest. In a moment you will know how much money you make 
+			per hour, day, even year. All this data can be protected by 
+			a four digit PIN code, that can be activated or deactivated 
+			at your one will. The project started as a learning experiment 
+			but it turned into a real product and I would like to thank: 
+			Gaby, Sorin, Sergiu, Teo and Andrei for their help and mostly 
+			for their time because, after all everyone's time is money.        
+         </p>
+        </div>
+        <div class="span5 asset">
+          <img class="img-polaroid" alt="Place Holder" src="http://placehold.it/480x300">
+        </div>
+      </div>
+
+      </div>
+
+      <div class="row-fluid footer">
+        <div class="span12">
+          <p>This work is licensed under
+            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
+              By-SA 3.0
+            </a>, without all the cruft that would otherwise be
+            put at the bottom of the page.</p>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-43033298-1', 'blind675bitstarter.com');
+        ga('send', 'pageview');
+
+    </script>
+    <!-- End Google Analytics -->
+  </body>
 </html>
